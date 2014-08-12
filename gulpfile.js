@@ -6,7 +6,7 @@ gulp.task('typescript', function(){
   gulp.src(['app/assets/typescripts/*.ts'])
     .pipe(plumber())
     .pipe(typescript())
-    .pipe(gulp.dest('public/assets/'))
+    .pipe(gulp.dest('public/javascripts/'))
 });
 
 gulp.task('watch', ['typescript'], function() {
